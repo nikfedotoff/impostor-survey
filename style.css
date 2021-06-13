@@ -14,6 +14,15 @@
 	text-decoration: none;
 }
 
+header {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 50px;
+	font-weight: bold;
+}
+
 .speed2:hover {
 	text-decoration: underline;
 }
@@ -577,6 +586,10 @@ svg {
 		font-size: 1.4vw;
 	}
 
+	header {
+		font-size: 6vw;
+	}
+
 	.speed2 {
 		position: absolute;
 		font-size: 3vw;
@@ -828,13 +841,4 @@ svg {
 
 .cls-3 {
 	fill: #f4f1de;
-}
-
-header {
-	position: absolute;
-	top: 20px;
-	left: 50%;
-	transform: translateX(-50%);
-	font-size: 50px;
-	font-weight: bold;
 }

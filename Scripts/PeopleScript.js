@@ -45,7 +45,7 @@ function Mobile() {
         blobHei = refHei;    
         is_mobile = true;  
        
-    }else if(containerHeight< 650){
+    } else if(containerHeight< 650){
         x = 18;
         y = 12;
         t = 16;
@@ -69,17 +69,15 @@ function test3() {
 
 // Test Button Runaway
 function runaway() {
-    //console.log("Runway Start resultState " + resultState);
     showResults(oldNum, true);
- 
 }
 
 function speed2(){
-    if(speedDouble == false){
+    if(speedDouble == false) {
         speed = speed*2;
         speedDouble = true;
         document.getElementById("SpeedThing").innerText = "Нормальный режим";
-    }else{
+    } else {
         speed = speed/2
         speedDouble = false;
         document.getElementById("SpeedThing").innerText = "Ускорить";

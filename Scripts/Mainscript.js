@@ -1,4 +1,4 @@
-// Когда страницы грузится
+// Когда страница грузится
 var Logger = false
 
 document.onload = pageSetUp()
