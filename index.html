@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Extraordinary Survey App</title>
+	<meta content="Survey App" name="description">
+	<meta content="Nikita Fedotov" name="author">
+	<link href="style.css" rel="stylesheet">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta property="og:title" content="Survey App" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css" integrity="sha512-Ho1L8FTfzcVPAlvfkL1BV/Lmy1JDUVAP82/LkhmKbRX5PnQ7CNDHAUp2GZe7ybBpovS+ssJDf+SlBOswrpFr8g==" crossorigin="anonymous" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js" integrity="sha512-B1xv1CqZlvaOobTbSiJWbRO2iM0iii3wQ/LWnXWJJxKfvIRRJa910sVmyZeOrvI854sLDsFCuFHh4urASj+qgw==" crossorigin="anonymous"></script>
+	<script src="Scripts/gsap.min.js"></script>
+	<script src="Scripts/CSSRulePlugin.min.js"></script>
+	<script src="Scripts/MorphSVGPlugin.min.js"></script>
+	<script src="Scripts/SVGs.js"></script>
+</head>
+<body>
+    <header>extraordinary-survey</header>
+	<button class="button start speed2" onclick="speed2()" id="SpeedThing">Ускорить</button>
+	
+	<div id="mainer">
+		<div id="Fading">
+			<div class="listbox" id="ListBox"></div>
+
+			<div class="textarea" id="TextArea">
+				<div id="IntroArea" class="area">
+					<p id="IntroText" class="IntroText">
+						Представьте, что вы находитесь в комнате со 100 незнакомцами,
+					<br>
+                        Представьте, что они похожи на вас.
+					</p>
+					<p id="IntroText" class="IntroText">
+						Основываясь исключительно на собственном инстинкте, восприятии,
+						<br>
+					
+						ответьте на следующие вопросы.
+					</p>
+					<div class="buttonbox">
+						<button class="button" onclick="Start()" id="Start">
+							Сравните себя с ними
+						</button>	
+					</div>
+				</div>
+				<div id="QuizArea" class="area">
+					<p id="QNum" class="QNum">Oh No</p>
+					<h2 id="Question" class="Question"><span id="QuesCopy"></span> than average?</h2>
+					<h2 id="Response" class="Question"><span id="Percent"></span> of participants also think they <span id="RespCopy"></span> than average.</h2>
+					<div class="buttonbox">
+						<button class="button" id="Yes" onclick="Answer('yes')">
+						    Yes, I am beautiful
+						</button>
+						<button class="button" onclick="Answer('no')" id="No">
+						    No, I am ugly
+						</button>
+						<button class="button" onclick="nextQues()" id="Next">
+						    Answer another question
+						</button>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="container">
+		<div id="some-element"></div>
+    </div>
+
+	<script src="Scripts/questions.js"></script>
+	<script src="Scripts/Quiz.js"></script>
+    <script src="Scripts/PeopleScript.js"></script>
+	<script src="Scripts/Mainscript.js"></script>
+</body>
+</html>
